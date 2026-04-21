@@ -13,8 +13,24 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["var(--font-display)"],
+        mono: ["var(--font-mono)"],
+      },
       colors: {
         border: "hsl(var(--border))",
+        "border-strong": "hsl(var(--border-strong))",
+        surface: {
+          DEFAULT: "hsl(var(--surface))",
+          elevated: "hsl(var(--surface-elevated))",
+          hover: "hsl(var(--surface-hover))",
+        },
+        status: {
+          normal: "hsl(var(--status-normal))",
+          warning: "hsl(var(--status-warning))",
+          critical: "hsl(var(--status-critical))",
+          offline: "hsl(var(--status-offline))",
+        },
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
